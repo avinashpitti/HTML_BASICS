@@ -1,0 +1,15 @@
+#para{
+    color: red;
+}
+
+#division{
+    color: blue;
+    background-color: yellow;
+}
+
+#info{
+    background-color: aqua;
+    color: rebeccapurple;
+    width: 250px;
+    height: 100px;
+}

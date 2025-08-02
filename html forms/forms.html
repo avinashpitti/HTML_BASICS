@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html forms</title>
+</head>
+<body>
+
+    <a href="https://www.facebook.com" target="_blank">facebook</a><br><br>
+
+    <form action="" >
+        <!--learn clearly about action and method(get,post) in forms-->
+        <label for="name">Name:</label>
+        <input type="text" placeholder="avinash" id="name"> <br><br>
+
+        <label for="country">Country</label>
+        <!--value property fills the value by default-->
+        <input type="text" value="India"><br><br>
+
+        <label for="password" >Password:</label>
+        <input type="password" minlength="6" maxlength="10" required><br><br>
+
+        <label for="age">Age:</label>
+        <!--disabled means that column doesn't work-->
+        <input type="number" disabled><br><br>
+
+        <label for="checkbox">Checkbox:</label> 
+        <input type="checkbox"><br><br>
+
+        <label for="color">Color:</label>
+        <input type="color"><br><br>
+
+        <p>Choose one of the following languages:</p>
+        <label for="java">java</label>
+        <!--if the radio button has to be selected even if we enter on the name 
+        then you have to give for and id attribute both should be same-->
+        <input type="radio" name="course" id="java">
+
+        <label for="python">python</label>
+        <!--checked means by default it chooses it here it is python we can change if we want-->
+        <input type="radio" name="course" id="python" checked>
+
+        <label for="ruby">ruby</label>
+        <input type="radio" name="course" id="ruby" >
+
+        <label for="node">nodejs</label>
+        <input type="radio" name="course" id="node" ><br><br>
+
+
+        <p>DROPDOWN MENU</p>
+    <select name="" id="">
+        <option value="">dosa</option>
+        <option value="">idly</option>
+        <option value="" selected>vada</option>
+        <option value="">pongal</option>
+        <option value="">upma</option>
+    </select> <br> <br>
+
+    <label for="file">Choose a file:</label>
+    <input type="file"> <br><br>
+
+
+
+        <label for="email">Email:</label>
+        <input type="email" pattern="[a-zA-Z0-9,+_@#$%]+@gmail\.com"><br><br>
+
+        <label for="range">Range:</label>
+        <input type="range"><br><br>
+
+        <label for="">URL:</label>
+        <input type="url">
+
+        
+
+        <label for="date">Date:</label>
+        <input type="date"> <br><br>
+
+        <label for="date">Date:</label>
+        <input type="datetime"><br><br>
+
+        <label for="date">Date:</label>
+        <input type="datetime-local"><br><br>
+        <label for="comment">COMMENT YOUR FEEDBACK:</label>
+        <textarea name="comment" id="comment" rows="10" cols="40" placeholder="please enter your comment here..."></textarea>
+
+        <!-- <label for="reset"></label>
+        <input type="reset"> -->
+
+        <label for="submit"></label>
+        <!--always use input type as submit not button button is used if we want to  custom button with javascript code-->
+        <input type="submit"> <br><br>
+
+        
+    </form>
+</body>
+</html>
